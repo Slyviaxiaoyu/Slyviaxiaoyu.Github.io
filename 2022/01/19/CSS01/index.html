@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>CSS01 | 段霄雨的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CSS简介网页分成三部分：结构、表现、行为 结构：HTML  表现：CSS  行为： js CSS：层叠样式表（图层）-&gt; 网页实际上是一个多层结构，通过CSS可以为网页的每一层来设计样式，最终能看到的只是网页的最上面一层。总之，CSS可以用来设置网页中元素的样式。 CSS编写的位置内联样式内联样式（不推荐使用，因为样式只能对一个标签生效，如果希望影响到多个元素，必须在每一个元素中都复制一遍">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS01">
+<meta property="og:url" content="http://example.com/2022/01/19/CSS01/index.html">
+<meta property="og:site_name" content="段霄雨的博客">
+<meta property="og:description" content="CSS简介网页分成三部分：结构、表现、行为 结构：HTML  表现：CSS  行为： js CSS：层叠样式表（图层）-&gt; 网页实际上是一个多层结构，通过CSS可以为网页的每一层来设计样式，最终能看到的只是网页的最上面一层。总之，CSS可以用来设置网页中元素的样式。 CSS编写的位置内联样式内联样式（不推荐使用，因为样式只能对一个标签生效，如果希望影响到多个元素，必须在每一个元素中都复制一遍">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-19T12:48:40.000Z">
+<meta property="article:modified_time" content="2022-01-20T03:06:02.741Z">
+<meta property="article:author" content="Slyviaxy">
+<meta property="article:tag" content="CSS Introduction">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="段霄雨的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">段霄雨的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-CSS01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/19/CSS01/" class="article-date">
+  <time class="dt-published" datetime="2022-01-19T12:48:40.000Z" itemprop="datePublished">2022-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      CSS01
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS简介"><a href="#CSS简介" class="headerlink" title="CSS简介"></a>CSS简介</h1><p>网页分成三部分：结构、表现、行为</p>
+<p>结构：HTML  表现：CSS  行为： js</p>
+<p>CSS：层叠样式表（图层）-&gt; 网页实际上是一个多层结构，通过CSS可以为网页的每一层来设计样式，最终能看到的只是网页的最上面一层。总之，CSS可以用来设置网页中元素的样式。</p>
+<h1 id="CSS编写的位置"><a href="#CSS编写的位置" class="headerlink" title="CSS编写的位置"></a>CSS编写的位置</h1><h2 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h2><p>内联样式（不推荐使用，因为样式只能对一个标签生效，如果希望影响到多个元素，必须在每一个元素中都复制一遍，当样式发生变化的时候还需要一个一个修改，不方便维护。开发时绝对不要使用内联样式）</p>
+<p><code>&lt;p style =&quot;color:brown; font-size:20;&quot;&gt;少小离家老大回&lt;/p&gt;</code></p>
+<p>效果如下：</p>
+<p style ="color:brown; font-size:20;">少小离家老大回</p>
+
+<h2 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h2><p>选择器：p(…)表示给所有的p标签设置样式</p>
+<p>将样式编写到head中的style标签里，然后通过CSS的选择器来选中元素为其设置各种样式，可以同时为多个标签设置样式，并且修改的时候只需要修改一处即可</p>
+<p>问题：内部样式表只能对一个网页起作用，样式不能跨页面进行复用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">    <span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>:red;<span class="attribute">font-size</span>:<span class="number">20</span>;</span></span><br><span class="line"><span class="css">    &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        少小离家老大回</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="外部样式表（最佳实践）"><a href="#外部样式表（最佳实践）" class="headerlink" title="外部样式表（最佳实践）"></a>外部样式表（最佳实践）</h2><p>将CSS样式编写到一个外部的CSS文件中，用link标签来引入外部的CSS文件</p>
+<p>在head中创建</p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./style.css&quot;&gt;</code></p>
+<p>外部样式表需要通过link标签进行引入，这样意味着只要想使用这些样式的网页都可以进行引用，使得我们的样式在不同的页面之间进行复用</p>
+<p>将我们的样式编写到外部的CSS文件中，可以使用到浏览器的缓存机制，从而加快网页加载速度，提高用户体验。（3个html同时引用了一个CSS文件，如果A先加载过，浏览器会自动缓存，BC会从浏览器直接加载，加快速度。）</p>
+<h1 id="CSS的基本语法简介"><a href="#CSS的基本语法简介" class="headerlink" title="CSS的基本语法简介"></a>CSS的基本语法简介</h1><p>style标签内部不属于html，style内部需要遵守CSS的编写规范，不能出现html标签。</p>
+<ul>
+<li><strong>注释</strong></li>
+</ul>
+<p><code>/*注释*/</code></p>
+<p>ctrl+/</p>
+<p>CSS的基本语法分成两部分</p>
+<p>选择器+声明块</p>
+<ul>
+<li><strong>选择器</strong></li>
+</ul>
+<p>通过选择器可以选中页面的指定元素，比如p{}，即选中页面中所有的p元素。</p>
+<ul>
+<li><strong>声明块</strong></li>
+</ul>
+<p>通过声明指定要为元素设置的样式。</p>
+<p>声明由一个一个声明组织，名值对结构，一个样式名对应一个样式值，<strong>：</strong>连接，<strong>；</strong>结尾。</p>
+<h1 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h1><h2 id="常用选择器"><a href="#常用选择器" class="headerlink" title="常用选择器"></a>常用选择器</h2><h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><p>作用：根据标签名来选择指定的元素</p>
+<p>语法：标签名{}</p>
+<p>eg：p{} div{} h1{}</p>
+<p>缺点：不能只给一两个地方设置样式</p>
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><p>作用：根据id属性值选定一个元素</p>
+<p>语法：#id属性值{}</p>
+<p>eg: #id{}</p>
+<p>缺点：id不能重复，如果同时将两个地方设置就不太行</p>
+<h3 id="class选择器（主要使用）"><a href="#class选择器（主要使用）" class="headerlink" title="class选择器（主要使用）"></a>class选择器（主要使用）</h3><p>与id类似，不同的是class可以重复</p>
+<p>作用：根据元素的class属性值选中一组元素</p>
+<p>语法：.class{}</p>
+<p>eg：.class属性值{}</p>
+<p>特点：可以同时为一个元素指定多个class名，用空格隔开</p>
+<h3 id="通配选择器"><a href="#通配选择器" class="headerlink" title="通配选择器"></a>通配选择器</h3><p>作用：选中页面中所有元素</p>
+<p>语法：*</p>
+<h2 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h2><h3 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h3><p>作用：选中同时复合多个条件的选择器</p>
+<p>语法：选择器1选择器2选择器3</p>
+<p>eg. 将class为red的div来设置 div.red{}</p>
+<p>注意：交集选择器中如果有元素选择器，必须使用元素选择器开头。</p>
+<p>一般不会有div#id因为id一般可以直接确定是哪个</p>
+<h3 id="选择器分组（并集选择器）"><a href="#选择器分组（并集选择器）" class="headerlink" title="选择器分组（并集选择器）"></a>选择器分组（并集选择器）</h3><p>作用：同时选择多个选择器对应的元素</p>
+<p>语法：选择器1，选择器2</p>
+<p>eg. h1,.blue{color:blue;} #h1{},.p1{},span{},div.red{}.</p>
+<h2 id="关系（父子）选择器"><a href="#关系（父子）选择器" class="headerlink" title="关系（父子）选择器"></a>关系（父子）选择器</h2><p>网页中不同元素的关系：</p>
+<ul>
+<li>父元素：直接包含子元素的元素叫做父元素</li>
+<li>子元素：直接被父元素包含的元素叫做子元素</li>
+<li>祖先元素：直接或间接包含子元素的元素叫做祖先元素，父元素也算祖先元素</li>
+<li>后代元素：直接或间接被祖先元素包含的元素叫做后代，子元素也算后代元素</li>
+<li>兄弟元素：同一个父元素</li>
+</ul>
+<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><p>作用：选中指定父元素的指定子元素</p>
+<p>语法：父元素&gt;子元素</p>
+<h3 id="后代元素选择器"><a href="#后代元素选择器" class="headerlink" title="后代元素选择器"></a>后代元素选择器</h3><p> 作用：选中指定元素内的所有后代</p>
+<p> 样式：祖先 后代</p>
+<p>可以连用 比如父元素&gt;子元素&gt;子元素 祖先 后代 后代</p>
+<h3 id="兄弟选择器"><a href="#兄弟选择器" class="headerlink" title="兄弟选择器"></a>兄弟选择器</h3><p>作用：选择下一个兄弟</p>
+<p>样式：前+后</p>
+<p>作用：选择下面所有兄弟</p>
+<p>样式：前~后</p>
+<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>作用：根据元素属性选择</p>
+<p>[属性名]选择含有指定属性的元素 </p>
+<p>​     [title]{</p>
+<p>​      color:chocolate;</p>
+<p>​    } </p>
+<p>​    [属性名=属性值]选择含有指定属性值的元素</p>
+<p>​    [title=abc]{</p>
+<p>​      color:blue;</p>
+<p>​    } </p>
+<p>​    [属性名^=属性值]选择属性值开头为某一值的元素</p>
+<p>​    [title^=a]{</p>
+<p>​      color:green;</p>
+<p>​    }</p>
+<p>​    [属性名$=属性值]选择属性值结尾为某一值的元素</p>
+<p>​    [title$=f]{</p>
+<p>​      color:brown;</p>
+<p>​    }</p>
+<p>[属性值*=属性名]选择属性值任一位置含有某一值的元素</p>
+<p>[title*=b]{</p>
+<p>color: purple_heart;</p>
+<p>}</p>
+<h2 id="伪类（pseudo-classes）选择器"><a href="#伪类（pseudo-classes）选择器" class="headerlink" title="伪类（pseudo-classes）选择器"></a>伪类（pseudo-classes）选择器</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>first<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>second<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>third<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>fourth<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>fifth<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果我们想让第一个li设置成红色</p>
+<p>​      - 如果设置class会出现问题，非动态，当第一个li被另外一个li替换到后面变成第二个，第二个就会变红</p>
+<p>​      - 伪类用来描述一个元素的特殊状态-&gt;比如第一个元素，鼠标点击的元素，鼠标移入的元素</p>
+<ul>
+<li>伪类：一个冒号开头</li>
+</ul>
+<h3 id="所有子元素排序"><a href="#所有子元素排序" class="headerlink" title="所有子元素排序"></a>所有子元素排序</h3><p>是所有子元素，不只是<code>&lt;li&gt;</code>标签，如果<code>&lt;li&gt;</code>前面还有别的标签比如<code>span</code>，那第一个<code>&lt;li&gt;</code>将不能算作是第一个子元素。</p>
+<p><strong>: first-child(第一个子元素)</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:first</span>-child&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>:last-child(最后一个子元素)</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:last-child</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>:nth-child(n){}</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>)&#123;&#125;</span><br><span class="line"><span class="comment">/*特殊值：n 第n个 n的范围0到正无穷</span></span><br><span class="line"><span class="comment">		2n或even 表示选中偶数位元素</span></span><br><span class="line"><span class="comment">		2n+1 或 odd 表示选中奇数位元素*/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="同类型元素进行排序"><a href="#同类型元素进行排序" class="headerlink" title="同类型元素进行排序"></a>同类型元素进行排序</h3><p>只算同类型元素的排序，只是<code>&lt;li&gt;</code>标签，如果<code>&lt;li&gt;</code>前面还有别的标签比如<code>span</code>，那第一个<code>&lt;li&gt;</code>将还算是第一个子元素。</p>
+<p>:first-of-type{}第一个子元素</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:first</span>-of-type&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>:last-of-type{}最后一个子元素</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:last-of-type</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>:nth-of-type(){}任意一个子元素</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:nth-of-type</span>()&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="否定伪类"><a href="#否定伪类" class="headerlink" title="否定伪类"></a>否定伪类</h3><p>:not 将符合条件的元素从选择器中驱逐。</p>
+<p>除了第三个，剩下的都是红色</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:not</span>(<span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>))&#123;</span><br><span class="line">	<span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="只有一个子元素（所有元素都算）"><a href="#只有一个子元素（所有元素都算）" class="headerlink" title="只有一个子元素（所有元素都算）"></a>只有一个子元素（所有元素都算）</h3><p>:only-child</p>
+<p>选择的是父元素中只有一个子元素，而且只有唯一的子元素。</p>
+<p>比如：以下只会改变第一个div里的元素样式，因为第一个div只有一个子元素</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:only-child</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:green;</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">p</span>&gt;</span><br><span class="line">		<span class="number">123</span></span><br><span class="line">	&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">p</span>&gt;</span><br><span class="line">		<span class="number">123456</span></span><br><span class="line">	&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">p</span>&gt;</span><br><span class="line">		<span class="number">456789</span></span><br><span class="line">	&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">a</span> pref=&quot;http://www.baidu.com<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">	&lt;/a&gt;</span></span><br><span class="line"><span class="string">&lt;div&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="只有一个子元素（只算一种类型中的）"><a href="#只有一个子元素（只算一种类型中的）" class="headerlink" title="只有一个子元素（只算一种类型中的）"></a>只有一个子元素（只算一种类型中的）</h3><p>:only-of-type</p>
+<p>Selects the only element of its type within another。</p>
+<p>比如：以下第一个div和第二个div都会改变，因为它只算p是否有一个。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:only-of-type</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:green</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">a</span> pref=&quot;http://www.baidu.com<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">	&lt;p&gt;lala&lt;/p&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;div&gt;</span></span><br><span class="line"><span class="string">	&lt;p&gt;lala&lt;/p&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="空元素"><a href="#空元素" class="headerlink" title="空元素"></a>空元素</h3><p>:empty{}</p>
+<p>比如,会选中第一个div</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:empty</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">p</span>&gt;lala&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="超链接的伪类"><a href="#超链接的伪类" class="headerlink" title="超链接的伪类"></a>超链接的伪类</h2><p>a:link 没访问过的链接（正常的链接）</p>
+<p>a:visited 访问过的链接</p>
+<p>visited表示访问过的网站，由于隐私的原因，只能修改颜色，大小之类的都不能修改。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;</span><br><span class="line"><span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;</span><br><span class="line"><span class="attribute">color</span>:purple;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>:hover 用来表示鼠标移入的状态</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line"><span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>:active 用来表示鼠标点击的状态</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span>&#123;</span><br><span class="line"><span class="attribute">color</span>:purple;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h2><p>表示页面中一些特殊的并不真实存在的元素，也就是特殊的位置</p>
+<p>::</p>
+<p>::first-letter第一个字母</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">::first-letter</span>&#123;</span><br><span class="line"><span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>::first-line第一行</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">::first-line</span>&#123;</span><br><span class="line"><span class="attribute">background-color</span>:yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>::selection</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">::selection</span>&#123;</span><br><span class="line"><span class="attribute">background-color</span>:greenyellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>::before起始位置 很重要，比如quote自动加上的引号这些都是通过before，after实现的。</p>
+<p>结合content属性来使用</p>
+<p>div::before{</p>
+<p>​    content:”《”;</p>
+<p>​    color:red;</p>
+<p>}</p>
+<p>::after结束位置</p>
+<p>div::after{</p>
+<p>​    content:”》”</p>
+<p>​    color:red;</p>
+<p>}</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span><span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">           <span class="attribute">content</span>:<span class="string">&quot;《&quot;</span>;</span><br><span class="line">           <span class="attribute">color</span>:violet;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="selector-tag">h1</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">           <span class="attribute">content</span>:<span class="string">&quot;》&quot;</span>;</span><br><span class="line">           <span class="attribute">color</span>:violet;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="餐厅选择器练习"><a href="#餐厅选择器练习" class="headerlink" title="餐厅选择器练习"></a>餐厅选择器练习</h2><p>网址：<a target="_blank" rel="noopener" href="http://flukeout.github.io/">http://flukeout.github.io/</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> plate&#123;&#125; 元素选择器</span><br><span class="line"><span class="number">2</span> bento&#123;&#125; 元素选择器</span><br><span class="line"><span class="number">3</span> <span class="selector-id">#fancy</span>&#123;&#125; id选择器</span><br><span class="line"><span class="number">4</span> plate apple&#123;&#125; 后代选择器</span><br><span class="line"><span class="number">5</span> <span class="selector-id">#fancy</span> pickle&#123;&#125;复合选择器</span><br><span class="line"><span class="number">6</span> <span class="selector-class">.small</span>&#123;&#125; 类选择器</span><br><span class="line"><span class="number">7</span> orange<span class="selector-class">.small</span>&#123;&#125; 交集选择器</span><br><span class="line"><span class="number">8</span> bento orange<span class="selector-class">.small</span>&#123;&#125; 复合选择器</span><br><span class="line"><span class="number">9</span> plate,bento&#123;&#125; 并集选择器，选择器分组</span><br><span class="line"><span class="number">10</span> *&#123;&#125; 选择所有，通配选择器</span><br><span class="line"><span class="number">11</span> plate *&#123;&#125; 选择盘子里的所有 通配选择器</span><br><span class="line"><span class="number">12</span> plate+apple&#123;&#125; 兄弟选择器,选择下一个</span><br><span class="line"><span class="number">13</span> plate~blento&#123;&#125; 兄弟选择器，选择下面的全部</span><br><span class="line"><span class="number">14</span> plate&gt;child&#123;&#125; 子元素选择器</span><br><span class="line"><span class="number">15</span> plate orange<span class="selector-pseudo">:first</span>-child&#123;&#125; 伪类选择器，第一个元素</span><br><span class="line"><span class="number">16</span> plate <span class="selector-pseudo">:only-child</span> &#123;&#125; 伪类选择器，只有一个子元素，在所有里面计数</span><br><span class="line"><span class="number">17</span> plate <span class="selector-class">.small</span><span class="selector-pseudo">:last-child</span>,pickle<span class="selector-pseudo">:last-child</span>&#123;&#125; 伪类选择器，last-child</span><br><span class="line"><span class="number">18</span> plate<span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>)&#123;&#125; 伪类选择器，第几个</span><br><span class="line"><span class="number">19</span> bento<span class="selector-pseudo">:nth-last-child</span>(<span class="number">3</span>)&#123;&#125; 伪类选择器，选择倒着数的第几个</span><br><span class="line"><span class="number">20</span> apple<span class="selector-pseudo">:first</span>-of-type&#123;&#125; 伪类选择器，只选择apple这种类型的第一个</span><br><span class="line"><span class="number">21</span> plate<span class="selector-pseudo">:nth-child</span>(even)&#123;&#125; 伪类选择器，选择第偶数个</span><br><span class="line"><span class="number">22</span> plate<span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>n+<span class="number">3</span>)&#123;&#125; 伪类选择器，选择第<span class="number">2</span>n+<span class="number">3</span>个</span><br><span class="line"><span class="number">23</span> plate apple<span class="selector-pseudo">:only-of-type</span>&#123;&#125; 伪类选择器，选择只有一个子元素，在apple里去计数</span><br><span class="line"><span class="number">24</span> orange<span class="selector-pseudo">:last-of-type</span>,apple<span class="selector-pseudo">:last-child</span>&#123;&#125; 伪类选择器，选择最后一个元素，last-of-type是该类型最后一个，last-child是所有类型中最后一个</span><br><span class="line"><span class="number">25</span> bento<span class="selector-pseudo">:empty</span>&#123;&#125;伪类选择器，空元素</span><br><span class="line"><span class="number">26</span> apple<span class="selector-pseudo">:not</span>(<span class="selector-class">.small</span>)&#123;&#125; 伪类选择器，not排除</span><br><span class="line"><span class="number">27</span> <span class="selector-attr">[for]</span>&#123;&#125; 属性选择器，选择属性</span><br><span class="line"><span class="number">28</span> plate<span class="selector-attr">[for]</span>&#123;&#125; 属性选择器，选择有属性for的某一元素</span><br><span class="line"><span class="number">29</span> <span class="selector-attr">[for=Vitaly]</span>&#123;&#125; 属性选择器，属性+属性值</span><br><span class="line"><span class="number">30</span> <span class="selector-attr">[for^=Sa]</span>&#123;&#125; 属性选择器，选择前几个字母相同元素</span><br><span class="line"><span class="number">31</span> <span class="selector-attr">[for$=ato]</span>&#123;&#125;属性选择器，选择后几个字母相同元素</span><br><span class="line"><span class="number">32</span> <span class="selector-attr">[for*=obb]</span>&#123;&#125; 属性选择器，选择任意位置几个字母相同元素</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/19/CSS01/" data-id="ckyme7c0s0000esuwcog16jzr" data-title="CSS01" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS-Introduction/" rel="tag">CSS Introduction</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/01/14/HTML02/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">HTML02</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS-Introduction/" rel="tag">CSS Introduction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS-Introduction/" style="font-size: 10px;">CSS Introduction</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/01/19/CSS01/">CSS01</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/14/HTML02/">HTML02</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/13/~$HTML/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/13/HTML01/">HTML学习笔记01</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Slyviaxy<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
